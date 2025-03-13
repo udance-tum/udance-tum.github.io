@@ -22,25 +22,35 @@ permalink: /news/index.html
       <div class="column column-66">
 
       	<ul class="news">
-          {%- for newspost in site.news reversed -%}
-          <li>
-            {% if newspost.image %}
-              <div class="newspost-image">
-                {% if newspost.link %}  
-                  <a href="{{ newspost.link }}"  target="_blank">
-                  {% endif %}
-                    <img src="{{ newspost.image | prepend: '/assets/' | relative_url}}"/>
+          {% assign newsposts = site.news | reverse %}
+          {% if newsposts.size > 0 %}
+            {%- for newspost in newsposts -%}
+            <li>
+              {% if newspost.image %}
+                <div class="newspost-image">
                   {% if newspost.link %}  
-                  </a>
-                {% endif %}
+                    <a href="{{ newspost.link }}"  target="_blank">
+                    {% endif %}
+                      <img src="{{ newspost.image | prepend: '/assets/' | relative_url}}"/>
+                    {% if newspost.link %}  
+                    </a>
+                  {% endif %}
+                </div>
+              {% endif %}
+              <div class="newspost-content">
+                <div class="newspost-meta">{{ newspost.date | date: "%d.%m.%y" }}</div>
+                {{ newspost.content}}
               </div>
-            {% endif %}
-            <div class="newspost-content">
-              <div class="newspost-meta">{{ newspost.date | date: "%d.%m.%y" }}</div>
-              {{ newspost.content}}
-            </div>
-          </li>
-          {%- endfor -%}
+            </li>
+            {%- endfor -%}
+          {% else %}
+            <li>
+              <div class="newspost-content">
+                <div class="newspost-meta">{% assign today = site.time | date: "%d.%m.%y" %}{{ today }}</div>
+                <p>Website Created</p>
+              </div>
+            </li>
+          {% endif %}
         </ul>
 
       </div>
