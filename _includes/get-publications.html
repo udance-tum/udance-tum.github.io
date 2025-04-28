@@ -5,10 +5,10 @@
   {% assign filtered_publications = filtered_publications | where_exp:"item", query %}
 {% endif %}
 
-{% if include.filter == 'project' %}
+<!-- {% if include.filter == 'project' %}
   {% capture query %} item.projects contains '{{ include.key }}'{% endcapture %}
   {% assign filtered_publications = filtered_publications | where_exp:"item", query %}
-{% endif %}
+{% endif %} -->
 
 {% if include.filter == 'id' %}
   {% capture query %} item.ref contains '{{ include.key }}'{% endcapture %}
