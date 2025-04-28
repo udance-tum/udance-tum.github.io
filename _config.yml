@@ -22,7 +22,7 @@ twitter_username: "ait_eth"
 # - username: jekyll2
 #   instance: example.com
 
-url: https://ait.ethz.ch
+url: https://udance-tum.github.io/
 
 show_excerpts: false # set to true to show excerpts on the homepage
 future: true
