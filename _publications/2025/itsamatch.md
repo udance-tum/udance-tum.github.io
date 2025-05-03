@@ -4,10 +4,10 @@ title: "It’s a (Blind) Match! Towards Vision-Language Correspondence without P
 authors: Dominik Schnaus, Nikita Araslanov, Daniel Cremers
 date: 2025-06-15
 venue: "Computer Vision and Pattern Recognition (CVPR)"
-image: https://dominik-schnaus.github.io/itsamatch/static/videos/teaser.mp4
+image: /assets/projects/itsamatch/itsamatch.png
 external_project_page: https://dominik-schnaus.github.io/itsamatch/
 video: https://dominik-schnaus.github.io/itsamatch/static/videos/teaser.mp4
-talk: 
+talk: https://youtu.be/Vp08_bsJFfI?t=1133
 paper: https://arxiv.org/pdf/2503.24129
 poster:
 data:

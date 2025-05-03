@@ -66,8 +66,6 @@
       {% include get-linked-persons.html persons=publication.authors contribs=publication.equal_contributions%}
     {% endcapture %}
     
-    <!-- Commenting out the card include -->
-    {%- comment -%}
     {% include card.html
       output="vertical"
       title=publication.title
@@ -78,7 +76,6 @@
       extra=pub-extra
       links=pub-links
     %}
-    {%- endcomment -%}
 
 {% endfor %}
 </div>
