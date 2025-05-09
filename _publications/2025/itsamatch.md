@@ -21,7 +21,6 @@ author={Schnaus, Dominik and Araslanov, Nikita and Cremers, Daniel},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
 year={2025}
 }"
----
 ref: 4Deform
 title: "4Deform: Neural Surface Deformation for Robust Shape Interpolation"
 authors: Lu Sang, Zehranaz Canfes, Dongliang Cao, Riccardo Marin, Florian Bernard, Daniel Cremers
